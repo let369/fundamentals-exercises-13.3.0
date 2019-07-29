@@ -14,11 +14,12 @@
         <div class="news-overview">
 
         <#-- TODO 1: Add a list iterator around the blog-post div to iterate over the pageable.items -->
-
+        <#list pageable.items as item>
           <div class="blog-post">
             <@hst.manageContent hippobean=item/>
           <#-- TODO 2: Create a link to the current item and store it a variable.
                        Use this variable down the code at the appropriate places. -->
+            <@hst.link var="link" hippobean=item />
 
             <div class="blog-post-type">
               <i class="icon-news"> </i>
@@ -27,37 +28,31 @@
             <div class="blog-span">
             <#-- TODO 3: Show the title of the current item. -->
               <h2>
-                <a href="news-detail.html">GoGreen Nominated for Award (Static Text)</a>
+                <a href="${link}">${item.title?html}</a>
               </h2>
 
             <#-- TODO 4: Show the introduction of the current item. -->
               <div class="blog-post-body">
-                <p>GoGreen is Pleased to Announce its Nomination for a UNEF Sustainable Business Award</p>
-                <p>
-                <p>New York-Nairobi. GoGreen is among 10 global businesses recognized by the United Nations
-                  Environmental Fund with a nomination for the prestigious Sustainable Business Award. According
-                  to the Sustainable Business Awards announcement, GoGreen has been nominated for its
-                  &ldquo;outstanding contributions to fighting climate change with its global corporate social
-                  responsibility strategy.&rdquo;</p>
-                <p>&ldquo;We&rsquo;re thrilled to be nominated for Sustainable Business Award&rdquo; notes
-                  GoGreen&rsquo;s CEO Robert Greene, &ldquo;we thoroughly respect the work of the UNEF and are
-                  proud to be listed among such visionary companies.&rdquo; Winners of the Sustainable Business
-                  Award will be announced at a ceremony in Nairobi this December.</p>
-                </p>
+                <p>${item.introduction?html}</p>
               </div>
 
               <div class="blog-post-details">
-                <#-- TODO 5: remove the fixed date and use item.date.time to insert it dynamically.
-                           You may want to use the <@fmt.formatDate> tag for formatting. -->
-                <div class="blog-post-details-item blog-post-details-item-left icon-calendar">22 October, 2015</div>
+              <#-- TODO 5: remove the fixed date and use item.date.time to insert it dynamically.
+                         You may want to use the <@fmt.formatDate> tag for formatting. -->
+                <div class="blog-post-details-item blog-post-details-item-left icon-calendar">
+                  <#if (item.date.time)??>
+                    <@fmt.formatDate value=item.date.time type="both" dateStyle="medium" timeStyle="short"/>
+                  </#if>
+                </div>
 
                 <div class="blog-post-details-item blog-post-details-item-right">
-                  <a href="news-detail.html"> Read more<i class="fa fa-chevron-right"></i>
+                  <a href="${link}"> Read more<i class="fa fa-chevron-right"></i>
                   </a>
                 </div>
               </div>
             </div>
           </div>
+        </#list>
 
             <#if cparam.showPagination>
                 <#include "../include/pagination.ftl">
