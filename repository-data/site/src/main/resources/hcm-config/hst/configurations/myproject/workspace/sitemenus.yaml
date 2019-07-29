@@ -5,3 +5,4 @@ definitions:
       /main:
         .meta:residual-child-node-category: content
         jcr:primaryType: hst:sitemenu
+        hst:lastmodified: 2019-07-29T17:23:14.723+02:00

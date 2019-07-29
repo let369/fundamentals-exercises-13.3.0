@@ -1,0 +1,71 @@
+/content/documents/myproject/service:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: f3833e98-f77a-4940-af7f-2564265702e1
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: d65db3ef-1216-402f-a678-8a74008a652b
+  hippotranslation:locale: en
+  /about-us:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 44272104-8012-441e-9067-ebb17bf57e2e
+    hippo:name: About Us
+    hippo:versionHistory: 70f8d56d-b5c6-4de1-bac2-82cf54ddda48
+    /about-us[1]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 2e21aca6-eaa0-4ec1-bc06-3ae3e8a27af9
+      hippo:availability: []
+      hippo:related___pathreference: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-07-29T17:20:36.552+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-29T17:20:36.552+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 71ca2f5e-f7d8-4d9a-8b71-5223e3b5c060
+      hippotranslation:locale: en
+      myproject:introduction: Some introduction
+      myproject:publicationdate: 0001-01-01T13:00:00+01:00
+      myproject:title: This is the About Us page
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>And some content</p>
+    /about-us[2]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: f072b8cb-366f-44e9-a391-b612aee789d5
+      hippo:availability: [preview]
+      hippo:related___pathreference: []
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-07-29T17:20:36.552+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-29T17:20:59.882+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: 71ca2f5e-f7d8-4d9a-8b71-5223e3b5c060
+      hippotranslation:locale: en
+      myproject:introduction: Some introduction
+      myproject:publicationdate: 0001-01-01T13:00:00+01:00
+      myproject:title: This is the About Us page
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>And some content</p>
+    /about-us[3]:
+      jcr:primaryType: myproject:contentdocument
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 5c321b32-ff92-446c-a3ca-57a891e31cee
+      hippo:availability: [live]
+      hippo:related___pathreference: []
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-07-29T17:20:36.552+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-29T17:20:59.882+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2019-07-29T17:21:03.153+02:00
+      hippotranslation:id: 71ca2f5e-f7d8-4d9a-8b71-5223e3b5c060
+      hippotranslation:locale: en
+      myproject:introduction: Some introduction
+      myproject:publicationdate: 0001-01-01T13:00:00+01:00
+      myproject:title: This is the About Us page
+      /myproject:content:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>And some content</p>
