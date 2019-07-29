@@ -5,7 +5,7 @@
 <#if menu??>
 <div class="has-edit-button">
   <#if menu.siteMenuItems??>
-    <ul class="nav nav-pills">
+    <ul class="navigation" id="main-navigation">
       <#list menu.siteMenuItems as item>
         <#if !item.hstLink?? && !item.externalLink??>
           <#if item.selected || item.expanded>
@@ -20,9 +20,9 @@
             <#assign href>${item.externalLink?replace("\"", "")}</#assign>
           </#if>
           <#if  item.selected || item.expanded>
-            <li class="active"><a href="${href}">${item.name?html}</a></li>
+            <li><a class="activelink" href="${href}"><span class="label-nav">${item.name?html}</span></a></li>
           <#else>
-            <li><a href="${href}">${item.name?html}</a></li>
+            <li><a href="${href}"><span class="label-nav">${item.name?html}</span></a></li>
           </#if>
         </#if>
       </#list>
