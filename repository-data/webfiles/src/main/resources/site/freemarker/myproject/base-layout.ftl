@@ -10,22 +10,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="<@hst.webfile path="css/bootstrap.css"/>">
+  <link rel="stylesheet" href="<@hst.webfile path="css/font-awesome.css"/>">
 
-  <link href='css/style.css' rel='stylesheet' type='text/css'>
-  <link href='css/responsive.css' rel='stylesheet' type='text/css'>
+  <link href='<@hst.webfile path="css/style.css"/>' rel='stylesheet' type='text/css'>
+  <link href='<@hst.webfile path="css/responsive.css"/>' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" media="screen" type="text/css" href="css/hippo-green.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="<@hst.webfile path="css/hippo-green.css"/>" />
 
   <!-- Fonts -->
-  <link href="fonts/open-sans.css" rel='stylesheet' type='text/css'>
-  <link href="fonts/raleway.css" rel='stylesheet' type='text/css'>
+  <link href="<@hst.webfile path="fonts/open-sans.css"/>" rel='stylesheet' type='text/css'>
+  <link href="<@hst.webfile path="fonts/raleway.css"/>" rel='stylesheet' type='text/css'>
 
   <!-- javascript -->
-  <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
-  <script type="text/javascript" src="js/kanzi-menu.js"></script>
-
+  <script type="text/javascript" src="<@hst.webfile path="js/jquery-2.1.0.min.js"/>"></script>
+  <script type="text/javascript" src="<@hst.webfile path="js/kanzi-menu.js"/>"></script>
+  <@hst.headContributions xhtml=true/>
 </head>
 <body class="bgpattern-neutral">
 
@@ -71,7 +71,7 @@
 
           <!-- Logo -->
           <div class="col-xs-2 logo">
-            <a href="index.html"><img src="images/gogreenlogo2.png" alt="" height="107" /></a>
+            <a href="index.html"><img src="<@hst.webfile path="images/gogreenlogo2.png"/>" alt="" height="107" /></a>
           </div>
           <!-- //Logo// -->
 
@@ -147,7 +147,7 @@
               <div class="footer-content">
                 <div class="footer-content-logo">
                   <a href="https://www.bloomreach.com" target="_blank">
-                    <img src="images/logo-bloomreach.svg" alt="bloomreach.com" />
+                    <img src="<@hst.webfile path="images/logo-bloomreach.svg"/>" alt="bloomreach.com" />
                   </a>
                 </div>
               </div>
