@@ -1,0 +1,15 @@
+definitions:
+  config:
+    /hippo:namespaces/myproject/basedocument:
+      jcr:primaryType: hipposysedit:templatetype
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 4d20084e-9d03-488f-91ef-b99ae340225c
+      /hipposysedit:nodetype:
+        jcr:primaryType: hippo:handle
+        jcr:mixinTypes: ['mix:referenceable']
+        jcr:uuid: 99b25ec4-77be-422d-8219-ddc478e118ba
+        /hipposysedit:nodetype:
+          jcr:primaryType: hipposysedit:nodetype
+          jcr:mixinTypes: ['hipposysedit:remodel']
+          hipposysedit:supertype: ['hippo:document', 'hippostdpubwf:document', 'hippostd:publishableSummary']
+          hipposysedit:uri: http://www.myproject.com/myproject/nt/1.0
