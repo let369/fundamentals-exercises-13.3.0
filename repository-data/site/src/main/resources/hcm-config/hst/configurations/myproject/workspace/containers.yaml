@@ -9,6 +9,7 @@ definitions:
           jcr:primaryType: hst:containercomponent
           hst:label: Home Page Main
           hst:xtype: hst.vbox
+          hst:lastmodified: 2019-07-29T17:34:36.591+02:00
       /pagenotfound:
         jcr:primaryType: hst:containercomponentfolder
         /main:

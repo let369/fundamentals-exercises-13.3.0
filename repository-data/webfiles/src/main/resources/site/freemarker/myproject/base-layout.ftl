@@ -25,7 +25,7 @@
   <!-- javascript -->
   <script type="text/javascript" src="<@hst.webfile path="js/jquery-2.1.0.min.js"/>"></script>
   <script type="text/javascript" src="<@hst.webfile path="js/kanzi-menu.js"/>"></script>
-  <@hst.headContributions xhtml=true/>
+  <@hst.headContributions categoryExcludes="htmlBodyEnd" xhtml=true/>
 </head>
 <body class="bgpattern-neutral">
 
@@ -127,7 +127,7 @@
   <!-- footer -->
   <@hst.include ref="footer"/>
 </div>
-
+<@hst.headContributions categoryIncludes="htmlBodyEnd" xhtml=true/>
 </body>
 </html>
 
