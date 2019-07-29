@@ -106,3 +106,5 @@ definitions:
         myproject:introduction: Einführung
         myproject:publicationdate: Publikationsdatum
         myproject:title: Titel
+    /hippo:configuration/hippo:translations/hippo:types/myproject:gogreenimageset:
+      jcr:primaryType: hipposys:resourcebundles

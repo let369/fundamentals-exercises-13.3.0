@@ -26,6 +26,10 @@
             </div>
 
             <div class="blog-span">
+              <div class="blog-post-featured-img">
+                <img src="<@hst.link hippobean=item.image.featured />"/>
+              </div>
+
             <#-- TODO 3: Show the title of the current item. -->
               <h2>
                 <a href="${link}">${item.title?html}</a>

@@ -17,7 +17,9 @@
             </div>
 
             <div class="blog-span">
-
+              <div class="blog-post-featured-img">
+                <img src="<@hst.link hippobean=document.image.featured />"/>
+              </div>
             <#-- TODO 1: remove the fixed title and insert it dynamically -->
               <h2>${document.title}</h2>
 
