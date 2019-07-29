@@ -31,3 +31,17 @@
   <@hst.cmseditmenu menu=menu/>
 </div>
 </#if>
+
+<#--
+<nav>
+              <ul class="navigation" id="main-navigation">
+                <li><a href="index.html" class="activelink"><span class="label-nav">Home</span> </a></li>
+                <li><a href="news.html"><span class="label-nav">News</span></a></li>
+                <li><a href="blogs.html"><span class="label-nav">Blogs</span></a></li>
+                <li><a href="events.html"><span class="label-nav">Events</span></a></li>
+                <li><a href="products.html"><span class="label-nav">Products</span></a></li>
+                <li><a href="about.html"><span class="label-nav">About</span></a></li>
+              </ul>
+            </nav>
+
+-->
