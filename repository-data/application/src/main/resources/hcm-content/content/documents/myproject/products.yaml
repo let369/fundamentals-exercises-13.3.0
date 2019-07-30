@@ -4,7 +4,7 @@
   jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
   jcr:uuid: bb583bc2-fb67-401b-b1b2-3c52598dc652
   hippo:name: Products
-  hippostd:foldertype: [new-translated-folder, new-document]
+  hippostd:foldertype: [new-product-folder, new-product-document]
   hippotranslation:id: 695b43a5-c2a7-4ce3-84db-6b5568405c97
   hippotranslation:locale: en
   /test-product:
