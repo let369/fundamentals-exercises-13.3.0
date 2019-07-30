@@ -1,0 +1,78 @@
+/content/documents/myproject/products:
+  .meta:order-before: configuration
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: bb583bc2-fb67-401b-b1b2-3c52598dc652
+  hippo:name: Products
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 695b43a5-c2a7-4ce3-84db-6b5568405c97
+  hippotranslation:locale: en
+  /test-product:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:versionInfo', 'mix:referenceable']
+    jcr:uuid: 9905bf88-10e7-45c8-8d4a-d2a609a10835
+    hippo:versionHistory: 556dd86f-60e9-4199-8ba2-2edfac902b82
+    /test-product[1]:
+      jcr:primaryType: myproject:product
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: 89bb453e-478e-4ac4-bc99-58fccd7ca761
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-07-30T11:01:18.091+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-30T11:04:38.284+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: e2566506-dcac-4668-b342-6615ce38dab5
+      hippotranslation:locale: en
+      myproject:categories: [food]
+      myproject:instock: 0
+      myproject:introduction: Intro
+      myproject:price: 0.0
+      myproject:rating: 0.0
+      myproject:title: Test product
+      /myproject:description:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Desc</p>
+    /test-product[2]:
+      jcr:primaryType: myproject:product
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: a68df77f-7e3e-4c0e-9edb-b25c411a023e
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-07-30T11:01:18.091+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-30T11:04:43.146+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippotranslation:id: e2566506-dcac-4668-b342-6615ce38dab5
+      hippotranslation:locale: en
+      myproject:categories: [food]
+      myproject:instock: 0
+      myproject:introduction: Intro
+      myproject:price: 0.0
+      myproject:rating: 0.0
+      myproject:title: Test product
+      /myproject:description:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Desc</p>
+    /test-product[3]:
+      jcr:primaryType: myproject:product
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: d62e5682-8269-474f-8421-8c0a379ca429
+      hippo:availability: [live]
+      hippostd:state: published
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2019-07-30T11:01:18.091+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-30T11:04:43.146+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      hippostdpubwf:publicationDate: 2019-07-30T11:04:45.084+02:00
+      hippotranslation:id: e2566506-dcac-4668-b342-6615ce38dab5
+      hippotranslation:locale: en
+      myproject:categories: [food]
+      myproject:instock: 0
+      myproject:introduction: Intro
+      myproject:price: 0.0
+      myproject:rating: 0.0
+      myproject:title: Test product
+      /myproject:description:
+        jcr:primaryType: hippostd:html
+        hippostd:content: <p>Desc</p>

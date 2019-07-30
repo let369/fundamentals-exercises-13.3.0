@@ -19,3 +19,6 @@
 [myproject:newsdocument] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
   orderable
 
+[myproject:product] > hippostd:relaxed, hippotranslation:translated, myproject:basedocument
+  orderable
+
