@@ -61,6 +61,7 @@
   <properties>
 
     <!--***START temporary override of versions*** -->
+    <training.features.version>13.2.0</training.features.version>
     <!-- ***END temporary override of versions*** -->
 
     <essentials.version>13.3.0</essentials.version>
