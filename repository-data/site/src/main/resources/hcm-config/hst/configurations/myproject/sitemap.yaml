@@ -41,3 +41,15 @@ definitions:
           jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/contentlist
           hst:relativecontentpath: ${parent}/${1}
+      /products:
+        jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/productlist
+        hst:relativecontentpath: products
+        /_any_.html:
+          jcr:primaryType: hst:sitemapitem
+          hst:componentconfigurationid: hst:pages/productpage
+          hst:relativecontentpath: products/${1}
+        /_any_:
+          jcr:primaryType: hst:sitemapitem
+          hst:componentconfigurationid: hst:pages/productlist
+          hst:relativecontentpath: ${parent}/${1}

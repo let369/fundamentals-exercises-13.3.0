@@ -1,0 +1,9 @@
+/hst:hst/hst:configurations/myproject/hst:workspace/hst:containers/productlist/main/productlist:
+  jcr:primaryType: hst:containeritemcomponent
+  hst:componentclassname: org.example.components.ProductListComponent
+  hst:parameternames: [path, documentTypes, sortOrder, sortField, pageSize, showPagination,
+    includeSubtypes]
+  hst:parametervalues: [products, 'myproject:product', asc, 'myproject:title', '10',
+    'on', 'off']
+  hst:template: productlist-main
+  hst:xtype: HST.Item

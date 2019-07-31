@@ -1,0 +1,34 @@
+/content/documents/myproject/configuration:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: b39aafa0-2072-4e3b-b195-397c09da28a5
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: ba474148-ea1f-45b5-b01f-5038f3ab2f61
+  hippotranslation:locale: en
+  /categories:
+    jcr:primaryType: hippo:handle
+    jcr:mixinTypes: ['hippo:translated', 'mix:referenceable']
+    jcr:uuid: b81f9a50-8b35-471f-bd47-3704856b2d4d
+    /categories:
+      jcr:primaryType: selection:valuelist
+      jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
+      jcr:uuid: 2696f4fb-b6bb-4dbc-9d8a-de04c8e90031
+      hippo:availability: [live, preview]
+      hippotranslation:id: faf3a8d5-0ddf-4008-b3e9-2995bdd12819
+      hippotranslation:locale: en
+      /selection:listitem[1]:
+        jcr:primaryType: selection:listitem
+        selection:key: food
+        selection:label: Food
+      /selection:listitem[2]:
+        jcr:primaryType: selection:listitem
+        selection:key: solar
+        selection:label: Solar
+      /selection:listitem[3]:
+        jcr:primaryType: selection:listitem
+        selection:key: transport
+        selection:label: Transport
+    /hippo:translation:
+      jcr:primaryType: hippo:translation
+      hippo:language: ''
+      hippo:message: Categories
