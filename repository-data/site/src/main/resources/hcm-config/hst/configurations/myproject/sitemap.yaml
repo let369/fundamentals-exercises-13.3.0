@@ -41,3 +41,9 @@ definitions:
           jcr:primaryType: hst:sitemapitem
           hst:componentconfigurationid: hst:pages/contentlist
           hst:relativecontentpath: ${parent}/${1}
+      /intranet:
+        jcr:primaryType: hst:sitemapitem
+        hst:componentconfigurationid: hst:pages/homepage
+        hst:pagetitle: Intranet Page
+        hst:users: [admin]
+        hst:authenticated: true
