@@ -62,3 +62,4 @@ definitions:
           .meta:residual-child-node-category: content
           jcr:primaryType: hst:containercomponent
           hst:xtype: HST.NoMarkup
+          hst:lastmodified: 2019-07-31T10:06:05.897+02:00
