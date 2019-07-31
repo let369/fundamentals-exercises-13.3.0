@@ -1,6 +1,6 @@
 definitions:
   config:
-    /hst:hst/hst:configurations/myproject/hst:pages/newslist:
+    /hst:hst/hst:configurations/common/hst:pages/newslist:
       jcr:primaryType: hst:component
       hst:referencecomponent: hst:abstractpages/base
       /main:

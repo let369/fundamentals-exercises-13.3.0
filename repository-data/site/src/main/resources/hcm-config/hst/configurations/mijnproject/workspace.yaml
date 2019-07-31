@@ -1,6 +1,6 @@
 definitions:
   config:
-    /hst:hst/hst:configurations/myproject/hst:workspace:
+    /hst:hst/hst:configurations/mijnproject/hst:workspace:
       jcr:primaryType: hst:workspace
       /hst:containers:
         jcr:primaryType: hst:containercomponentfolder
