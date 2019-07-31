@@ -59,7 +59,7 @@
   <!-- End of emptied/overridden metadata from parent hippo-cms7-release pom. -->
 
   <properties>
-
+    <training.features.version>13.2.0</training.features.version>
     <!--***START temporary override of versions*** -->
     <!-- ***END temporary override of versions*** -->
 
