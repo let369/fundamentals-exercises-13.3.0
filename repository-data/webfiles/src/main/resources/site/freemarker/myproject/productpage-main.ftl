@@ -32,7 +32,7 @@
           <li class="list-group-item">
             Categories:
             <#list document.categories as category>
-              ${category?html}<#sep>,
+                ${categoriesMap[category]?html}<#sep>,
             </#list>
           </li>
         </ul>

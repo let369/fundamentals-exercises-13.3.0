@@ -11,15 +11,17 @@ import org.onehippo.cms7.essentials.components.EssentialsContentComponent;
 import org.onehippo.forge.selection.hst.contentbean.ValueList;
 import org.onehippo.forge.selection.hst.util.SelectionUtil;
 
-public class ProductComponent {
+public class ProductComponent extends EssentialsContentComponent{
 
-/*
     @Override
     public void doBeforeRender(final HstRequest request, final HstResponse response) {
         super.doBeforeRender(request, response);
 
         // TODO: add Value List code
+        final ValueList valueList = SelectionUtil.getValueListByIdentifier("product-categories", RequestContextProvider.get());
+        if (valueList != null) {
+            request.setAttribute("categoriesMap", SelectionUtil.valueListAsMap(valueList));
+        }
     }
-*/
 
 }
