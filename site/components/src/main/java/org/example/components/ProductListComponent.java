@@ -24,7 +24,7 @@ import org.onehippo.cms7.essentials.components.EssentialsListComponent;
 import org.onehippo.cms7.essentials.components.info.EssentialsListComponentInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-@ParametersInfo(type = EssentialsListComponentInfo.class)
+@ParametersInfo(type = ProductListComponentInfo.class)
 public class ProductListComponent extends EssentialsListComponent{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(ProductListComponent.class);
@@ -34,13 +34,16 @@ public class ProductListComponent extends EssentialsListComponent{
 
     @Override
     protected void contributeAndFilters(final List<BaseFilter> filters, final HstRequest request, final HstQuery query) {
-        try {
-            // TODO 2a create a new Filter and add it to the list filters
-            Filter filter = query.createFilter();
-            filter.addGreaterThan("myproject:instock", 0);
-            filters.add(filter);
-        } catch (FilterException e) {
-            LOGGER.error("An exception occurred while trying to create a query filter for instock greater than zero: {}", e);
+        final ProductListComponentInfo info  = getComponentParametersInfo(request);
+        if(info.isHideOutOfStock()) {
+            try {
+                // TODO 2a create a new Filter and add it to the list filters
+                Filter filter = query.createFilter();
+                filter.addGreaterThan("myproject:instock", 0);
+                filters.add(filter);
+            } catch (FilterException e) {
+                LOGGER.error("An exception occurred while trying to create a query filter for instock greater than zero: {}", e);
+            }
         }
     }
 
