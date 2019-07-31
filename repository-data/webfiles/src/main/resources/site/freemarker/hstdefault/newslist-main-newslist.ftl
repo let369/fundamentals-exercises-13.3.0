@@ -14,6 +14,7 @@
       </#if>
       <p>${item.location?html}</p>
       <p>${item.introduction?html}</p>
+      <@fmt.message key="read.more"/>
     </article>
   </#list>
   <div class="has-new-content-button">

@@ -72,23 +72,62 @@
           not found. - [This text can be edited here: http://localhost:8080/cms/?1&path=/content/documents/administration/labels/pagenotfound]']
   /pagination:
     jcr:primaryType: hippo:handle
-    jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
+    jcr:mixinTypes: ['hippo:named', 'hippo:versionInfo', 'mix:referenceable']
     jcr:uuid: ee1c1c6f-e443-4621-9b23-30de10d87ee4
     hippo:name: Pagination
-    /pagination:
+    hippo:versionHistory: 902c5e35-621e-4cf7-ab67-2304cd778965
+    /pagination[1]:
       jcr:primaryType: resourcebundle:resourcebundle
       jcr:mixinTypes: ['mix:referenceable']
       jcr:uuid: 6676d4f2-a42d-40ee-bb8c-afa3dd5f58e6
-      hippo:availability: [live, preview]
+      hippo:availability: [live]
       hippostd:state: published
       hippostdpubwf:createdBy: admin
       hippostdpubwf:creationDate: 2014-08-21T14:30:14.382+02:00
-      hippostdpubwf:lastModificationDate: 2014-08-21T17:03:32.811+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-31T11:25:33.996+02:00
       hippostdpubwf:lastModifiedBy: admin
-      hippostdpubwf:publicationDate: 2014-08-21T17:06:47.420+02:00
+      hippostdpubwf:publicationDate: 2019-07-31T11:25:35.613+02:00
       resourcebundle:descriptions: ['Used in the indication, how many results were
           found. The label is appended to the number of results.', Label used for
-          the link to the previous page., Label used for the link to the next page.]
+          the link to the previous page., Label used for the link to the next page.,
+        '']
       resourcebundle:id: essentials.pagination
-      resourcebundle:keys: [results.indication, page.previous, page.next]
-      resourcebundle:messages: [document(s), previous, next]
+      resourcebundle:keys: [results.indication, page.previous, page.next, read.more]
+      resourcebundle:messages: [document(s), previous, next, Read more]
+      resourcebundle:messages_nl: [document(en), vorige, volgende, Lees verder]
+    /pagination[2]:
+      jcr:primaryType: resourcebundle:resourcebundle
+      jcr:mixinTypes: ['mix:referenceable', 'mix:versionable']
+      jcr:uuid: 1716d7c5-399a-4c2f-a356-178aefa515f6
+      hippo:availability: [preview]
+      hippostd:state: unpublished
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-08-21T14:30:14.382+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-31T11:25:33.996+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      resourcebundle:descriptions: ['Used in the indication, how many results were
+          found. The label is appended to the number of results.', Label used for
+          the link to the previous page., Label used for the link to the next page.,
+        '']
+      resourcebundle:id: essentials.pagination
+      resourcebundle:keys: [results.indication, page.previous, page.next, read.more]
+      resourcebundle:messages: [document(s), previous, next, Read more]
+      resourcebundle:messages_nl: [document(en), vorige, volgende, Lees verder]
+    /pagination[3]:
+      jcr:primaryType: resourcebundle:resourcebundle
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: deed04e9-3c2b-4b01-a34e-e231d2a4410a
+      hippo:availability: []
+      hippostd:state: draft
+      hippostdpubwf:createdBy: admin
+      hippostdpubwf:creationDate: 2014-08-21T14:30:14.382+02:00
+      hippostdpubwf:lastModificationDate: 2019-07-31T11:24:33.306+02:00
+      hippostdpubwf:lastModifiedBy: admin
+      resourcebundle:descriptions: ['Used in the indication, how many results were
+          found. The label is appended to the number of results.', Label used for
+          the link to the previous page., Label used for the link to the next page.,
+        '']
+      resourcebundle:id: essentials.pagination
+      resourcebundle:keys: [results.indication, page.previous, page.next, read.more]
+      resourcebundle:messages: [document(s), previous, next, Read more]
+      resourcebundle:messages_nl: [document(en), vorige, volgende, Lees verder]
